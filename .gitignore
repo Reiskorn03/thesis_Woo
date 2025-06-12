@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# virtuelle Umgebung
+.venv/
+
+# rohes Datenset-Subsets
+Data_Extraction/extracted_subsets/
+
+# Rohdaten
+EDA/pubsaf_extracted

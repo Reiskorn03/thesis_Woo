@@ -1,0 +1,53 @@
+Feature Name,Data File,Feature,Type,Length,Format,Note
+Patient ID,CAND_KIPA,PX_ID,num,8,,Patient Identifier
+Person ID,CAND_KIPA,PERS_ID,num,8,,Unique Person ID for Recipient
+Candidate Data,CAND_KIPA,CAN_SOURCE,char,1,,"Source of Candidate Data: A =Active Waitlist,R= Removed from Waitlist,L=Live Don Organ Recipient never on waitlist"
+Organ type,CAND_KIPA,WL_ORG,char,4,$WLORG,Organ of this waitlisted record (KI: Kidney)
+Organ type #2,CAND_KIPA,ORG_AR,char,3,,Organ type with pancreas expanded to PTA and PAK
+Procedure type,CAND_KIPA,REC_TX_PROCEDURE_TY,num,8,TXPROC,"Transplant Procedure Type (101: Left kidney, 102: Right kidney BUT more codes with kidney!)"
+Donor ID,CAND_KIPA,DONOR_ID,num,8,,Encrypted Unique Donor ID (all donors) - foreign key
+Donor type,CAND_KIPA,DON_TY,char,3,,"Donor Type (C-deceased, L-living)"
+Patient age at listing (≥ 18 yrs),CAND_KIPA,CAN_AGE_AT_LISTING,num,8,AGE9A,
+Listing date,CAND_KIPA,CAN_LISTING_DT,num,8,MMDDYY,Listing Date - date/time candidate was physically added to the waiting list - this date/time does not change for transfers
+Transplant date,CAND_KIPA,PERS_NEXTTX,num,8,MMDDYY,Transplant Date
+Transplant date #2,CAND_KIPA,REC_TX_DT,num,8,MMDDYY,Transplant Date
+Sex,CAND_KIPA,CAN_GENDER,char,1,,
+Race,CAND_KIPA,CAN_RACE,num,8,RACE,
+Race #2,CAND_KIPA,CAN_RACE_SRTR,char,10,$RACEBSR,SRTR Patient Race
+BMI,CAND_KIPA,CAN_BMI,num,8,,
+Death of candidate,CAND_KIPA,CAN_DEATH_DT,num,8,MMDDYY,"If removed due to Death, date of death"
+Cause of Death,CAND_KIPA,CAN_REM_COD,num,8,COD,
+Functional Status,CAND_KIPA,CAN_FUNCTN_STAT,num,8,FUNCSTAT,Patient/s Functional Status
+Initial Status,CAND_KIPA,CAN_INIT_STAT,num,8,CANDSTAT,Initial Status of Patient
+Last Date of Active Status,CAND_KIPA,CAN_LAST_ACT_STAT_DT,num,8,MMDDYY,
+Last Date of Inactive Status,CAND_KIPA,CAN_LAST_INACT_STAT_DT,num,8,MMDDYY,
+Primary diagnosis ,CAND_KIPA,CAN_DGN,num,8,DGN,Primary Diagnosis / KI Diagnosis for KP Candidate
+Previous Kidney Transplant,CAND_KIPA,CAN_PREV_KI,num,8,,Previous Kidney Transplant
+Previous Kidney Transplant #2,CAND_KIPA,CAN_PREV_KI_TX_FUNCTN,char,1,,"If Candidate has had a prior Kidney Transplant, is the prior Kidney graft still functioning?"
+Diabetes (DM),CAND_KIPA,CAN_DIAB,num,8,DBINSLDP,
+Diabetes (DM) #2,CAND_KIPA,CAN_DIAB_TY,num,8,DIABTY,
+Peripheral vascular disease,CAND_KIPA,CAN_PERIPH_VASC,char,1,,Symptomatic Peripheral Vascular Disease
+Dialysis ,CAND_KIPA,CAN_DIAL,num,8,DIALTYLI,
+Dialysis #2,CAND_KIPA,CAN_DIAL_DT,num,8,MMDDYY,Date Candidate went on Dialysis
+Malignancy ,CAND_KIPA,CAN_MALIG,char,1,,
+Malignancy #2,CAND_KIPA,CAN_MALIG_TY,num,8,MALIG,Previous Malignancy Type(s)
+Angina,CAND_KIPA,CAN_ANGINA,num,8,ANGINA,Angina/Coronary Artery Disease
+Angina #2,CAND_KIPA,CAN_ANGINA_CAD,num,8,ANGNACAD,
+CMV,CAND_KIPA,CAN_CMV_STAT,char,2,$SRLSTT,Candidate/s CMV Status
+History of red‐cell transfusions,CAND_KIPA,CAN_PREV_TXFUS,char,1,,Any Previous Transfusions
+Activation Date ,CAND_KIPA,CAN_ACTIVATE_DT,num,8,MMDDYY,Activation Date - date/time waiting time clock started
+Serumcreatinine,CAND_KIPA,CAN_CREAT_CLEAR,num,8,,Calculated Creatinine Clearance
+Serumcreatinine #2,CAND_KIPA,CAN_CREAT_CLEAR_DT,num,8,MMDDYY,Date Candidate met the minimum Creatinine Clearance to begin accuring waiting time
+Serumcreatinine Donor Final,CAND_KIPA,CAN_MIN_FINAL_CREAT,num,8,,Minimum acceptable donor Serum Creainine - Final
+Serumcreatinine Donor Peak,CAND_KIPA,CAN_MIN_PEAK_CREAT,num,8,,Minimum acceptable donor Serum Creatinine - Peak
+Serumcreatinine Most Recent,CAND_KIPA,CAN_MOST_RECENT_CREAT,num,8,,Most Recent Absolute Creatinine
+Serum Albumin,CAND_KIPA,CAN_TOT_ALBUMIN,num,8,,Total Serum Albumin
+HLA A antigen,CAND_KIPA,CAN_WLKIPA_A1,num,8,ALOCUS,Candidate/s HLA - A (1) antigen
+HLA A antigen #2,CAND_KIPA,CAN_WLKIPA_A2,num,8,ALOCUS,Candidate/s HLA - A (2) antigen
+HLA B antigen,CAND_KIPA,CAN_WLKIPA_B1,num,8,BLOCUS,Candidate/s HLA - B (1) antigen
+HLA B antigen #2,CAND_KIPA,CAN_WLKIPA_B2,num,8,BLOCUS,Candidate/s HLA - B (2) antigen
+HLA DR antigen,CAND_KIPA,CAN_WLKIPA_DR1,num,8,DRLOCUS,Candidate/s HLA - DR (1) antigen
+HLA DR antigen #2,CAND_KIPA,CAN_WLKIPA_DR2,num,8,DRLOCUS,Candidate/s HLA - DR (2) antigen
+PRA (at listing),CAND_KIPA,CAN_INIT_ALLOC_PRA,num,8,,First Allocation PRA (at listing)
+PRA (current),CAND_KIPA,CAN_INIT_CUR_PRA,num,8,,First non-missing Current PRA
+PRA (peak),CAND_KIPA,CAN_INIT_SRTR_PEAK_PRA,num,8,,"Initial Peak PRA (max of peak, cur)"

@@ -1,0 +1,70 @@
+Feature Name,Data File,Feature,Type,Length,Format,Note
+Transplant ID,TX_KI,TX_ID,num,8,,Unique identifier for Transplant - foreign key to rec_transplant
+TRR ID,TX_KI,TRR_ID,num,8,,Unique identifier for TRR - unique key
+Patient ID,TX_KI,PX_ID,num,8,,"Patient Identifier - from WL for A & R Cands,TCR for L Cands"
+Person ID,TX_KI,PERS_ID,num,8,,Unique Person ID for Recipient
+Donor ID,TX_KI,DONOR_ID,num,8,,Encrypted Unique Donor ID (all donors) - foreign key
+Procedure Type,TX_KI,REC_TX_PROCEDURE_TY,num,8,TXPROC,Transplant Procedure Type
+Transplant Date,TX_KI,REC_TX_DT,num,8,MMDDYY,
+Donor Sex,TX_KI,DON_GENDER,char,1,,
+Donor HLA A1,TX_KI,DON_A1,num,8,ALOCUS,Donor/s HLA - A (1) antigen
+Donor HLA A2,TX_KI,DON_A2,num,8,ALOCUS,Donor/s HLA - A (2) antigen
+Donor HLA B1,TX_KI,DON_B1,num,8,BLOCUS,Donor/s HLA - B (1) antigen
+Donor HLA B2,TX_KI,DON_B2,num,8,BLOCUS,Donor/s HLA - B (2) antigen
+Donor HLA DR1,TX_KI,DON_DR1,num,8,DRLOCUS,Donor/s HLA - DR (1) antigen
+Donor HLA DR2,TX_KI,DON_DR2,num,8,DRLOCUS,Donor/s HLA - DR (2) antigen
+Donor Blood Type,TX_KI,DON_ABO,char,3,$ABO,Donor/s Blood Type
+Donor Age,TX_KI,DON_AGE,num,8,,Calculated Donor Age in Years at Organ Recovery or Referral Date
+Donor Race,TX_KI,DON_RACE,num,8,RACE,
+Donor Anti CMV,TX_KI,DON_ANTI_CMV,char,2,$SRLSTT,Anti-CMV
+Donor Anti HCV,TX_KI,DON_ANTI_HCV,char,2,$SRLSTT,Anti-HCV
+Donor CMV IgG,TX_KI,DON_CMV_IGG,char,2,$SRLSTT,CMV IgG
+Donor Serum Creatinine,TX_KI,DON_CREAT,num,8,,
+Expanded Donor criteria,TX_KI,DON_EXPAND_DON_KI,num,3,,"Meets expanded donor criteria for kidney (1= yes , 0= no)"
+Haplotype Match,TX_KI,DON_HAPLO_TY_MATCH,num,8,HAPLOTY,Haplotype Match Between Live Donor & Recipient
+Organ type,TX_KI,ORG_TY,char,4,$WLORG,
+Person Cause of Death,TX_KI,PERS_OPTN_COD,num,8,COD,
+Death date,TX_KI,PERS_OPTN_DEATH_DT,num,8,MMDDYY,OPTN Death date by unique person
+Recipient Cause of Death,TX_KI,REC_COD,num,8,THCOD,Recipient/s Cause of Death
+Contributory COD,TX_KI,REC_COD2,num,8,COD,Contributory Cause of Death:
+Contributory COD #2,TX_KI,REC_COD3,num,8,COD,Contributory Cause of Death:
+Total Cold Ischemic Time,TX_KI,REC_COLD_ISCH_TM,num,8,,Preserv: Total Cold Ischemic Time
+Recipients Age,TX_KI,REC_AGE_AT_TX,num,8,AGE9A,Age at TX
+Recipients BMI,TX_KI,REC_BMI,num,8,,
+Recipients HLA A1 ,TX_KI,REC_A1,num,8,ALOCUS,Recipient/s HLA - A (1) antigen
+Recipients HLA A2,TX_KI,REC_A2,num,8,ALOCUS,Recipient/s HLA - A (2) antigen
+Recipients HLA B1,TX_KI,REC_B1,num,8,BLOCUS,Recipient/s HLA - B (1) antigen
+Recipients HLA B2,TX_KI,REC_B2,num,8,BLOCUS,Recipient/s HLA - B (1) antigen
+Recipients HLA DR1,TX_KI,REC_DR1,num,8,DRLOCUS,Recipient/s HLA - DR (1) antigen
+Recipients HLA DR2,TX_KI,REC_DR2,num,8,DRLOCUS,Recipient/s HLA - DR (2) antigen
+Num of HLA A mismatch,TX_KI,REC_A_MM_EQUIV_CUR,num,8,,Num of A mismatches - current equivalent match
+Num of HLA A mismatch #2,TX_KI,REC_A_MM_EQUIV_TX,num,8,,Num of A mismatches - equivalent match @ tx
+Num of HLA B mismatch,TX_KI,REC_B_MM_EQUIV_CUR,num,8,,Num of B mismatches - current equivalent match
+Num of HLA B mismatch #2,TX_KI,REC_B_MM_EQUIV_TX,num,8,,Num of B mismatches - current match @ tx
+Num of HLA DR mismatch,TX_KI,REC_DR_MM_EQUIV_CUR,num,8,,Num of DR mismatches - current equivalent match
+Num of HLA DR mismatch #2,TX_KI,REC_DR_MM_EQUIV_TX,num,8,,Num of DR mismatches - current match @ tx
+Num of HLA mismatch,TX_KI,REC_MM_EQUIV_CUR,num,8,,Num of hla mismatches - current equivalent match
+Num of HLA mismatch #2,TX_KI,REC_MM_EQUIV_TX,num,8,,Num of hla mismatches - current match @ tx
+Recipients CMV,TX_KI,REC_CMV_IGG,char,2,,CMV IgG
+Recipients CMV #2,TX_KI,REC_CMV_IGM,char,2,,CMV IgM
+Serology Test Results,TX_KI,REC_CMV_STAT,char,2,,Pre-Tx Serology Test Results: Cytomegalovirus
+Recipient Recent Serum Creatinine,TX_KI,REC_CREAT,num,8,,Most Recent Serum Creatinine
+Creatinine Decline ,TX_KI,REC_CREAT_DECLINE_GE25,char,1,,Creatinine Decline by 25% or More in First 24 Hour
+Recipient Serum Creatinine at Discharge,TX_KI,REC_DISCHRG_CREAT,num,8,,Serum Creatinine at Discharge
+Recipient EBV,TX_KI,REC_EBV_STAT,char,2,,EBV serology status
+Recipient HBV,TX_KI,REC_HBV_ANTIBODY,char,2,,HBV: Core Antibody//Core Antibody:
+Recipient HBV #2,TX_KI,REC_HBV_SURF_ANTIGEN,char,2,,HBV: Surface Antigen//Surface Antigen:
+Recipient HCV,TX_KI,REC_HCV_STAT,char,2,,HCV serology status
+Recipient most recent PRA,TX_KI,REC_PRA_MOST_RECENT,num,8,,Most Recent Serum PRA (%)
+Anti viral therapy ,TX_KI,REC_ANTIVRL_THERAPY,char,1,,"If Anti-viral Therapies, check all that apply, check in REC_ANTIVRL_THERAPY_TY	"
+Anti viral therapy specify,TX_KI,REC_ANTIVRL_THERAPY_TY,num,8,ANTLVIRL,"If Anti-viral Therapies, check all that apply"
+Recipients Discharge Date,TX_KI,REC_DISCHRG_DT,num,8,,Transplant Discharge Date
+Primary Cause of Graft Failure,TX_KI,REC_FAIL_CAUSE_TY,num,8,GRFFL,
+Graft Failure Date,TX_KI,REC_FAIL_DT,num,8,MMDDYY,
+Blood Flow at transplant,TX_KI,REC_FINAL_FLOW_RATE_TX,num,8,,Final flow rate at transplant:
+Resistance at transplant,TX_KI,REC_FINAL_RESIST_TX,num,8,,Final resistance at transplant:
+Dialysis within 1st week,TX_KI,REC_FIRST_WEEK_DIAL,char,1,,Patient Need Dialysis within First Week
+Recipient Functional Status,TX_KI,REC_FUNCTN_STAT,num,8,FUNCSTAT,Functional Status
+Recipient Graft Status,TX_KI,REC_GRAFT_STAT,char,1,,
+Medical Condition,TX_KI,REC_MED_COND,num,8,MEDCOND,
+Patient Status,TX_KI,REC_PX_STAT,char,1,$PXSTATA,
