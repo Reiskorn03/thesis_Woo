@@ -11,11 +11,11 @@ import pyreadstat
 
 # Mapping: What .csv File is linked to which SAS file?
 META_FILES = {
-    "cand_kipa":    "CAND_KIPA Input.csv",
-    "pra_hist":     "PRA_HIST Input.csv",
-    "stathist_kipa":"STATHIST_KIPA Input.csv",
-    "tx_ki":        "TX_KI Input.csv",
-    "txf_ki":       "TXF_KI Output.csv",
+    "cand_kipa":    "meta_datasets/CAND_KIPA Input.csv",
+    "pra_hist":     "meta_datasets/PRA_HIST Input.csv",
+    "stathist_kipa":"meta_datasets/STATHIST_KIPA Input.csv",
+    "tx_ki":        "meta_datasets/TX_KI Input.csv",
+    "txf_ki":       "meta_datasets/TXF_KI Output.csv",
 }
 
 # SAS_Folder path
