@@ -1,0 +1,8 @@
+Importance,Variable,Type,Length,Format,Label,Note
+1,CANHX_ALLOC_PRA,num,8,,Allocation PRA (peak or cur),"Important, after first analysis"
+1,CANHX_BEGIN_DT,num,8,MMDDYY,Date WLR record was last changed,"Important, after first analysis"
+1,CANHX_CPRA,num,8,,Candidate/s Calculated PRA (as a raw fraction),"Important, after first analysis"
+1,CANHX_CUR_PRA,num,8,,Candidate/s Current PRA,"Important, after first analysis"
+1,CANHX_SRTR_PEAK_PRA,num,8,,Peak PRA (max of older peak and current PRA values),"Important, after first analysis"
+1,PX_ID,num,8,,Patient Identifier,"Important, after first analysis"
+1,WL_ORG,char,2,$WLORG,Organ of this waitlisted record,"Important, after first analysis"

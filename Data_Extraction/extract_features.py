@@ -11,11 +11,11 @@ import pyreadstat
 
 # Mapping: What .csv File is linked to which SAS file?
 META_FILES = {
-    "cand_kipa":    "meta_datasets/CAND_KIPA Input.csv",
-    "pra_hist":     "meta_datasets/PRA_HIST Input.csv",
-    "stathist_kipa":"meta_datasets/STATHIST_KIPA Input.csv",
-    "tx_ki":        "meta_datasets/TX_KI Input.csv",
-    "txf_ki":       "meta_datasets/TXF_KI Output.csv",
+    "cand_kipa":    "/Users/chanyoungwoo/Thesis/Data_Extraction/meta_datasets/CAND_KIPA_VER1.csv",
+    "pra_hist":     "/Users/chanyoungwoo/Thesis/Data_Extraction/meta_datasets/PRA_HIST_VER1.csv",
+    "stathist_kipa":"/Users/chanyoungwoo/Thesis/Data_Extraction/meta_datasets/STAHIST_KIPA_VER1.csv",
+    "tx_ki":        "/Users/chanyoungwoo/Thesis/Data_Extraction/meta_datasets/TX_KI_VER1.csv",
+    "txf_ki":       "/Users/chanyoungwoo/Thesis/Data_Extraction/meta_datasets/TXF_KI_VER1.csv",
 }
 
 # SAS_Folder path
@@ -38,7 +38,7 @@ def load_feature_lists():
         # delete Duplicate
         features = (
             df_meta
-            .loc[df_meta["Feature"].notna(), "Feature"]
+            .loc[df_meta["Variable"].notna(), "Variable"]
             .astype(str)
             .unique()
             .tolist()
@@ -66,7 +66,7 @@ def main():
         subset_df = read_sas_subset(key, features)
 
         # Save as .csv
-        out_path = os.path.join(OUT_FOLDER, f"{key}_subset.csv")
+        out_path = os.path.join(OUT_FOLDER, f"{key}_subset_ver1.csv")
         print(f"Save subset: {out_path}")
         subset_df.to_csv(out_path, index=False)
 

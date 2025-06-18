@@ -1,8 +1,0 @@
-Feature Name,Data File,Feature,Type,Length,Format,Note
-Patient ID,PRA_HIST,PX_ID,num,8,,Patient Identifier
-Organ type,PRA_HIST,WL_ORG,char,2,$WLORG,Organ of this waitlisted record
-PRA allocation,PRA_HIST,CANHX_ALLOC_PRA,num,8,,Allocation PRA (peak or cur)
-PRA last changed date,PRA_HIST,CANHX_BEGIN_DT,num,8,MMDDYY,Date WLR record was last changed
-PRA calculated,PRA_HIST,CANHX_CPRA,num,8,,Candidate/s Calculated PRA (as a raw fraction)
-PRA current,PRA_HIST,CANHX_CUR_PRA,num,8,,Candidate/s Current PRA
-PRA peak,PRA_HIST,CANHX_SRTR_PEAK_PRA,num,8,,Peak PRA (max of older peak and current PRA values)

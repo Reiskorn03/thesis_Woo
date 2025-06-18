@@ -4,8 +4,11 @@
 # virtuelle Umgebung
 .venv/
 
-# rohes Datenset-Subsets
-Data_Extraction/extracted_subsets/
+# Extracted Subsets ver1
+extracted_subsets/
 
 # Rohdaten
 EDA/pubsaf_extracted
+
+# Extracted subsets ver2
+Data_Extraction/clean_subsets_ver2
