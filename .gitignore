@@ -12,3 +12,9 @@ EDA/pubsaf_extracted
 
 # Extracted subsets ver2
 Data_Extraction/clean_subsets_ver2
+
+# Extracted exubsets ver2 backup
+Data_Extraction/clean_ver2_subsets_backup
+
+# Subset for Survival Outcome
+Data_Extraction/outcome_definition/survival_outcomes.csv
