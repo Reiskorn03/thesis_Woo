@@ -18,3 +18,6 @@ Data_Extraction/clean_ver2_subsets_backup
 
 # Subset for Survival Outcome
 Data_Extraction/outcome_definition/survival_outcomes.csv
+
+# Subset for Graft Failure
+Data_Extraction/outcome_definition/graft_failure_outcomes.csv
