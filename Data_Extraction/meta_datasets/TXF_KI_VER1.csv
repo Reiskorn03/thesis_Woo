@@ -47,3 +47,5 @@ Importance,Variable,Type,Length,Format,Label,Note
 1,TX_ID,num,8,,Unique identifier for TX - set same for multi_org,"Important, after first analysis"
 1,REC_TX_ORG_TY,char,15,$TXORGTY,"Transplant Organ Type(s), text contains list of organ types involved in TX","Important, after first analysis"
 1,REC_TX_TY,num,8,TXTYPE,"Transplant Type, number of donors & organ types involved in TX","Important, after first analysis"
+1,TFL_HOSP,char,1,,Hospitalizations during Follow-Up Period,
+1,TFL_HOSP_NUM,num,8,,Number of Hospitalizations,

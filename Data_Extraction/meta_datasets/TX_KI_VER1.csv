@@ -106,3 +106,4 @@ Importance,Variable,Type,Length,Format,Label,Note
 1,TFL_LASTATUS,char,1,$PXSTATB,Last Status,"Important, after first analysis "
 1,TRR_ID,num,8,,Unique identifier for TRR - unique key,"Important, after first analysis "
 1,TX_ID,num,8,,Unique identifier for Transplant - foreign key to rec_transplant,"Important, after first analysis "
+1,REC_HOSP_90_DAYS,char,1,,Was patient hospitalizied during the last 90 days prior to the transplant admission,
